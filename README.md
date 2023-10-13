@@ -6,6 +6,8 @@ Cansleep is a software application developed exclusively for educational purpose
 ## Dependencies
 For the program to work, you need to install [Nmap](https://nmap.org), [Massan](https://github.com/robertdavidgraham/masscan), [Smap](https://github.com/s0md3v/Smap), [Python3.8](https://www.python.org) or higher
 
+## Warning masscan on windows: [Transmit rate (IMPORTANT!!)](https://github.com/robertdavidgraham/masscan#transmit-rate-important)
+
 ## Installation Linux
 ```bash
 # Nmap install
