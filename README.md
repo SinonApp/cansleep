@@ -92,6 +92,9 @@ __Adding New Scanners: In this release, we will introduce support for additional
 __New Protocols and Camera Vendors: Expand the tool's capabilities by adding support for new protocols beyond RTSP, and integrate compatibility with a broader array of camera vendors, including their specific functionalities.__
 
 - [ ] Version 1.3.0:
+__In this release, we will integrate exploits. This enhancement will empower the tool to identify and exploit a wider range of security weaknesses, contributing to a more comprehensive assessment of target systems.__
+
+- [ ] Version 1.4.0:
 __Generating Reports in Many Formats: In this release, we will introduce the functionality to generate comprehensive reports in various formats, such as PDF, HTML, and JSON, making it easier for users to analyze and share the results of their scans.__
 
 - [ ] Version 2.0.0:
