@@ -1,7 +1,7 @@
 # Cansleep
 
 ## Description
-is a software application developed exclusively for educational purposes. It is designed to analyze and evaluate the functionality and security of urban surveillance cameras, digital video recorders (DVRs), and Real-Time Streaming Protocol (RTSP) video streams. This tool serves as an educational resource for students, researchers, and security professionals interested in understanding the complexities of video surveillance infrastructure.
+Cansleep is a software application developed exclusively for educational purposes. It is designed to analyze and evaluate the functionality and security of urban surveillance cameras, digital video recorders (DVRs), and Real-Time Streaming Protocol (RTSP) video streams. This tool serves as an educational resource for students, researchers, and security professionals interested in understanding the complexities of video surveillance infrastructure.
 
 ## Dependencies
 For the program to work, you need to install [Nmap](https://nmap.org), [Massan](https://github.com/robertdavidgraham/masscan), [Smap](https://github.com/s0md3v/Smap), [Python3.8](https://www.python.org) or higher
