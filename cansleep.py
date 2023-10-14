@@ -1,7 +1,6 @@
 from scanners.smap_scanner import SmapScanner
 from scanners.nmap_scanner import NmapScanner
 from scanners.masscan_scanner import MasscanScanner
-from scanners.rustscan_scanner import RustScanScanner
 
 from tools.checker import rtsp_checker, dahua_checker, hikka_checker
 from tools.brute import rtsp_bruter, dahua_bruter, hikka_bruter
