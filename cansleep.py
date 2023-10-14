@@ -216,10 +216,6 @@ if TARGET != None or args.load:
                 logging.info('[MASSCAN] Start scanning. Please wait...')
                 mass = MasscanScanner(TARGET, is_file=utils.target_is_file(TARGET), ports=PORTS, interface=args.interface, logging=logging)
                 report = mass.scan()
-            case 'rustscan':
-                logging.info('[RUSTSCAN] Start scanning. Please wait...')
-                rust = RustScanScanner(TARGET, is_file=utils.target_is_file(TARGET), ports=PORTS, logging=logging)
-                report = rust.scan()
     else:
         report = utils.load_from_report(args.load)
 
