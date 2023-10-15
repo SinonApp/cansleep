@@ -9,12 +9,12 @@ def rtsp_bruter(target, creds, logging):
     if target.is_authorized:
         logging.info(f'[RTSP] Without auth for: {target}')
         return target
-    
+
     ok = rtsp_connect(target, credentials=":")
     if ok and any(code in target.data for code in CREDENTIALS_OK_CODES):
         logging.info(f'[RTSP] Without auth for: {target}')
         return target
-    
+
     for cred in creds:
         ok = rtsp_connect(target, credentials=cred.replace('\n', ''))
         if not ok:
@@ -24,7 +24,6 @@ def rtsp_bruter(target, creds, logging):
             logging.info(f'[RTSP] Creds found for: {target}')
             return target
     logging.debug(f'[RTSP] Creds not found for: {target}')
-        
 
 def dahua_bruter(target, creds, logging):
     if not target: return False
@@ -44,12 +43,12 @@ def dahua_bruter(target, creds, logging):
                     return False
                 else:
                     logging.debug(f'[DAHUA] [{port}] Unable to login: %s:%s with %s:%s' % (server_ip, port, login, password))
-                    return False
             except:
                 logging.debug(f'[DAHUA] [{port}] Failed login: {server_ip} with {login}:{password}')
                 return False
         except Exception as e:
             logging.error(e)
+    return False
 
 def hikka_bruter(target, creds, logging):
     if not target: return False
@@ -58,6 +57,7 @@ def hikka_bruter(target, creds, logging):
     for cred in creds:
         login, password = cred.split(':')
         login, password = login.replace('\n', ''), password.replace('\n', '')
+
         try:
             hikka = HikClient(server_ip, int(port), login.replace('\n', ''), password.replace('\n', ''))
             connection = hikka.connect()
@@ -66,7 +66,7 @@ def hikka_bruter(target, creds, logging):
                 return server_ip, port, login, password, hikka
             else:
                 logging.debug(f'[HIKKA] [{port}] Unable to login: %s:%s with %s:%s' % (server_ip, port, login, password))
-                return False
         except Exception as e:
             logging.debug(f'[HIKKA] [{port}] Unable to login: %s:%s with %s:%s' % (server_ip, port, login, password))
             return False
+    return False

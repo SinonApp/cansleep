@@ -40,7 +40,7 @@ def rtsp_snapshoter(rtsp_url: str, snapshots_folder, logging, tries=1):
             stream = container.streams.video[0]
             if _is_video_stream(stream):
                 file_name = escape_chars(f"{rtsp_url.lstrip('rtsp://')}.jpg")
-                file_path = f'{snapshots_folder}/{file_name}'
+                file_path = f'./{snapshots_folder}/{file_name}'
 
                 stream.thread_type = "AUTO"
                 for frame in container.decode(video=0):
