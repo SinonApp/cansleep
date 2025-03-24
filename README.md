@@ -1,5 +1,7 @@
 # Cansleep
 
+# !!!The project is not abandoned, as soon as possible we will update and improve it!!!
+
 ## Description
 Cansleep is a software application developed exclusively for educational purposes. It is designed to analyze and evaluate the functionality and security of urban surveillance cameras, digital video recorders (DVRs), and Real-Time Streaming Protocol (RTSP) video streams. This tool serves as an educational resource for students, researchers, and security professionals interested in understanding the complexities of video surveillance infrastructure.
 
@@ -80,28 +82,3 @@ To perform a brute force attack using a combo of usernames and passwords:
 ```
 sudo python3 cansleep.py --target 192.168.1.1 --combo usernames.txt:passwords.txt -m all -t 10
 ```
-
-## Roadmap
-- [x] Version 1.0.0 (Current Version):
-__Feature Set Consolidation: This version focuses on consolidating the existing feature set, including network device scanning, authentication testing, and RTSP video stream quality testing. Enhance user experience and fix any known issues.__
-
-- [ ] Version 1.1.0:
-__Adding New Scanners: In this release, we will introduce support for additional scanners and detection techniques, improving the tool's ability to identify a wider range of devices and vulnerabilities.__
-
-- [ ] Version 1.2.0:
-__New Protocols and Camera Vendors: Expand the tool's capabilities by adding support for new protocols beyond RTSP, and integrate compatibility with a broader array of camera vendors, including their specific functionalities.__
-
-- [ ] Version 1.3.0:
-__In this release, we will integrate exploits. This enhancement will empower the tool to identify and exploit a wider range of security weaknesses, contributing to a more comprehensive assessment of target systems.__
-
-- [ ] Version 1.4.0:
-__Generating Reports in Many Formats: In this release, we will introduce the functionality to generate comprehensive reports in various formats, such as PDF, HTML, and JSON, making it easier for users to analyze and share the results of their scans.__
-
-- [ ] Version 2.0.0:
-__Enhanced User Interface: This major update will focus on improving the user interface to make the tool more user-friendly and intuitive. It will involve revamping the graphical interface, enhancing user interactions, and providing a more seamless experience.__
-
-- [ ] Version 2.1.0:
-__Advanced Vulnerability Assessment: Expand the tool's capabilities to perform in-depth vulnerability assessments and penetration testing on detected devices, including running specific exploits or checks.__
-
-- [ ] Version 2.2.0:
-__Integration with Security Databases: Implement integration with security vulnerability databases and threat intelligence feeds to provide real-time information on known vulnerabilities associated with detected devices.__
